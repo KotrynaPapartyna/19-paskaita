@@ -128,15 +128,53 @@
     var masyvoIlgis= tusciasMasyvas.length;
     console.log (masyvoIlgis);
     for (var i=0; i <masyvoIlgis; i++) {
-        console.log (tusciasMasyvas[i]);
+        //console.log (tusciasMasyvas[i]);
     }
 
-    // 1 susumuotis visus skaicius esancius 9 elementu masyve
+    // uzduotis 1- susumuoti visus skaicius esancius 9 elementu masyve. 
+
+    var skaiciuMasyvas= [10,10,10,10,10,10,10,10,90] //suma- 170 
+
+    var suma=0;
+    for (var i=0; i <skaiciuMasyvas.length; i++) {
+        suma=suma+skaiciuMasyvas[i];
+    }
+        console.log ("Masyvo elementu suma" + suma);
 
 
+    //uzduotis 2- masyvas is penkiu skaiciu [1,2,3,4,5]. sudauginti visus masyve esancius skaicius
+
+    var skaitmenys= [1,2,3,4,5];
+    var sandauga= 1;
+
+    for (var i=0; i<skaitmenys.length; i++) {
+        sandauga=sandauga*skaitmenys[i]; // sutrumpinta forma- " sandauga*=skaitmenys[i] " 
+    }
+    console.log ("skaitmenu sandauga"+sandauga);
+
+    // uzduotis 3- sudauginti 2 skaicius be daugybos operatoriaus
+
+    var a=3;
+    var b=11; 
+    var sandauga=0;
+
+    for(var i=0; i<b; i++) { // b yra kiek kartu
+        sandauga = sandauga+a;
+        //console.log(i);
+    }
+    console.log ("ciklu sukurta sandauga"+sandauga);
 
 
+            // bandymas - ciklas- begalybe- uzluzo narsykle :) 
 
+            //var aa=11;
+            //while (aa > 10) {
+                //console.log("labas");
+            // aa--;
+            //  }
+    
+        
+    
     </script>
     
 
