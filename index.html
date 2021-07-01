@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 paskaita</title>
+</head>
+<body>
+
+    <script>
+        "use strict";
+
+        //switch sakinys- leidzia daryti daug vietos uzimancias salygas
+
+        var siosDienosData= new Date ();
+        var diena= siosDienosData.getDay();
+        console.log(diena); // gali buti nuo 0 iki 6 
+
+        //0- sekmadienis //1- pirmadienis //2- antradienis //3- treciadienis //4- ketvirtadienis
+        //5- penktadienis //6- sestadienis 
+        //pagal gautus "diena" skaicius, isvesti savaites diena- zodziais. 
+
+        if (diena == 0) {
+            console.log ("sekmadienis");
+        } else if (diena == 1) {
+            console.log ("pirmadienis");
+        } else if (diena == 2) {
+            console.log ("antradienis");
+        } else if (diena == 3) {
+            console.log ("treciadienis");
+        } else if (diena == 4) {
+            console.log ("ketvirtadienis");
+        } else if (diena == 5) {
+            console.log ("penktadienis");
+        } else if (diena == 6) {
+            console.log ("sestadienis");
+        } else {
+            console.log ("tokios dienos nera");
+        }
+
+        switch (diena) {
+            case 0: // diena== 0- tikrina ar case'as teisingas 
+            console.log ("sekmadienis");  
+            break; 
+            case 1:
+            console.log ("pirmadienis");
+            break; 
+            case 2:
+            console.log ("antradienis");
+            break; 
+            case 3:
+            console.log ("treciadienis");
+            break; 
+            case 4:
+            console.log ("ketvirtadienis");
+            break; 
+            case 5:
+            console.log ("penktadienis");
+            break;  
+            case 6:
+            console.log ("sestadienis"); 
+            break; 
+        default: 
+            console.log ("tokios dienos nera");
+        }
+
+    //masyvas 
+    //101 sandeliukas, su savo unikaliais numeriais 
+    var sandelis1=1;
+    var sandelis2=2;
+    
+    var sandelioMasyvas; // kuriame bus daug sandeliu 
+
+    
+    // pirmas elementas-0, antras- 1, trecias-2 ir t.t. (n+1)
+    sandelioMasyvas= ["pirmas","antras","trecias","ketvirtas",5,"sestas","septintas"];
+    console.log (sandelioMasyvas);
+
+    //atvaizduoti tik sandeliuka, kurio pavadinimas "ketvirtas"
+
+    console.log (sandelioMasyvas[0]);
+    console.log (sandelioMasyvas[1]);
+    console.log (sandelioMasyvas[2]);
+    console.log (sandelioMasyvas[3]);
+    console.log (sandelioMasyvas[4]);
+    console.log (sandelioMasyvas[5]);
+    console.log (sandelioMasyvas[6]);
+
+    var ketvirtas=sandelioMasyvas[3];
+        console.log (ketvirtas);
+
+    sandelioMasyvas[7]="astuntas";
+        console.log(sandelioMasyvas);
+    
+    // praleidziant viena elementa (9) console (inspect) rodo "empty", todel reikia pildyti is eiles. 
+    sandelioMasyvas[9]="desimtas";
+        
+    sandelioMasyvas[0]="pirmas atnaujintas";
+        console.log(sandelioMasyvas);
+
+    
+
+    //tuscias masyvas 
+    var tusciasMasyvas =[];
+    //tusciasMasyvas [0]="nulis"; 
+    //tusciasMasyvas [1]="vienas";
+
+    //tusciasMasyvas.push ("vienas");// prideda elementa i pacia masyvo pabaiga 
+    //tusciasMasyvas.push ("antras"); //2 
+    //console.log (tusciasMasyvas);
+
+    //ciklai
+    //i- apibreziamas ciklo kintamasis kas yra { skliaustuose}. 
+    //kol i<15, kai pasibaigia- prie i- pridedamas 1)
+    //i- apsibrezti nereikia, ciklo iteratorius
+    
+    // push kodas uzpildo masyva. 
+    for(var i=0; i<333; i++) {   
+        tusciasMasyvas.push("vienas"+ i);
+        console.log (i);
+    }
+    console.log (tusciasMasyvas)
+
+    //atvaizduoti visus sandeliukus atskirai 
+
+    //budas kaip isivesti masyve esanciu elementu reiksmes- nustatant ilgi- t.y. tai kas yra kode
+    var masyvoIlgis= tusciasMasyvas.length;
+    console.log (masyvoIlgis);
+    for (var i=0; i <masyvoIlgis; i++) {
+        console.log (tusciasMasyvas[i]);
+    }
+
+    // 1 susumuotis visus skaicius esancius 9 elementu masyve
+
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
